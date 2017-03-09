@@ -52,9 +52,18 @@
     <Compile Include="Concrete\DBInitializer\TodoDBInitializer.cs" />
     <Compile Include="Concrete\TodoDBContext.cs" />
     <Compile Include="Entities\TodoItem.cs" />
+    <Compile Include="Migrations\201703091023443_InitialCreate.cs" />
+    <Compile Include="Migrations\201703091023443_InitialCreate.Designer.cs">
+      <DependentUpon>201703091023443_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703091023443_InitialCreate.resx">
+      <DependentUpon>201703091023443_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
