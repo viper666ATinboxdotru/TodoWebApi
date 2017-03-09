@@ -9,7 +9,7 @@ using TodoWebApi.Core.Entities;
 
 namespace TodoWebApi.Core.Concrete.DBInitializer
 {
-    class TodoDBInitializer : DropCreateDatabaseAlways<TodoDBContext>
+    class TodoDBInitializer : CreateDatabaseIfNotExists<TodoDBContext>
     {
         protected override void Seed(TodoDBContext context)
         {

@@ -104,6 +104,8 @@
     </Compile>
     <Compile Include="Models\ItemsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CreateItemViewModel.cs" />
+    <Compile Include="ViewModels\EditItemViewModel.cs" />
     <Compile Include="ViewModels\ItemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
